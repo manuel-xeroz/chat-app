@@ -1,0 +1,261 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+}
+
+body {
+    line-height: 1.4;
+    color: #333333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+}
+
+#word {
+    word-wrap: break-word;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    background: #0091ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    font-family: cursive;
+    transition: background .3s ease;
+}
+
+button:hover {
+    background: #0983e0;
+}
+
+button:disabled {
+    cursor: default;
+    background: #43a4ee;
+}
+
+/* Join Page Styles */
+
+.centered-form {
+    background: #0091ff;
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form__box {
+    box-shadow: 0px 0px 10px 1px #1D1F26;
+    background: #F7F7FA;
+    padding: 24px;
+    width: 500px;
+    display: inline-block;
+}
+
+.centered-form button {
+    width: 200px;
+    margin-left: 130px;
+}
+
+.centered-form input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+}
+
+.chat__sidebar {
+    height: 100vh;
+    color: white;
+    background: #333744;
+    width: 225px;
+    overflow-y: scroll
+}
+
+/* Chat styles */
+
+.chat__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    padding: 24px 24px 0 24px;
+    overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px;   
+}
+
+.message-legend {
+    text-align: left;
+    margin-bottom: 16px
+}
+
+.message2 {
+    text-align: right;
+}
+
+.message2-legend {
+    text-align: right;
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.message__meta {
+    color: #777;
+    font-size: 12px;
+}
+
+.message a {
+    color: #0070CC;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 24px;
+}
+
+.compose form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 16px 0 0;
+    flex-grow: 1;
+    border-radius: 7px;
+}
+
+.compose button {
+    font-size: 14px;
+}
+
+/* Chat Sidebar Styles */
+
+.room-title {
+    font-weight: 600;
+    font-size: 22px;
+    background: #0091ff;
+    padding: 24px;   
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+    font-family:'Open Sans';
+    color: white;
+    text-transform: uppercase;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 300;
+    padding: 12px 24px 0 24px;
+    font-family: monospace;
+    font-size: 14px;
+    list-style: circle;
+}
+
+.text {
+    font-family: cursive;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border: 2px solid #0091ff;
+    border-radius: 0px 10px 10px 10px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    background-color: #0091ff;
+    max-width: 250px;
+}
+
+.text2 {
+    font-family: cursive;
+    margin-bottom: 10px;
+    font-size: 12px;
+    border: 2px solid #0091ff;
+    border-radius: 10px 0px 10px 10px;
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    background-color: #0091ff;
+    display: inline-block;
+    text-align: left;
+    max-width: 250px;
+    word-wrap: break-word;
+}
+
+.username {
+    font-size: 14px;
+    font-family: cursive;
+    color: #0091ff;
+    border: 2px solid #0091ff;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#heading-user {
+    text-align: center;
+    margin: 10px auto;
+}
