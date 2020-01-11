@@ -23,25 +23,23 @@ const autoScroll = () => {
     //height of the  new message
     const newMessageStyles = getComputedStyle($newMessage)
     const newMessageMargin = parseInt(newMessageStyles.marginBottom)
-    const newMessageHeight = $newMessage.offsetHeight + newMessageMargin
-
+    const newMessageHeight = $newMessage.offsetHeight + newMessageMargin 
+    
     //get the visible height
     const visibleHeight = $messages.offsetHeight
 
     //height of message container
-    const contentHeight = $messages.scrollHeight
+    const contentHeight = $messages.scrollHeight 
 
     //how far have i scrolled
-    const scrollOffset = $messages.scrollTop + visibleHeight
-
+    const scrollOffset = $messages.scrollTop + visibleHeight + 5
+    
     if(contentHeight - newMessageHeight <= scrollOffset) {
         $messages.scrollTop = contentHeight
     }
 }
 
 socket.on('message', (word) => {
-    console.log(word.username)
-    console.log(username)
         if (word.username !== username || word.username === 'Admin') {
             const html = Mustache.render(messageTemplate, {
                 word: word.text,
