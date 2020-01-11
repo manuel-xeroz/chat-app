@@ -30,41 +30,41 @@
 
     <script id="message-template" type="text/html">
         <div class="message-legend">
-            <p>
-                <span class="message__name">{{username}} -</span>
-                <span class="message__meta">{{createdAt}}</span>
-            <p>
-            <p class="text">{{word}}</p>
+            <div class="text">
+                <p><span class="message__name">{{username}}</span><p>
+                {{word}}
+                <p><span class="message__meta">{{createdAt}}</span></p>
+            </div>
         </div>
     </script>
 
     <script id="message2-template" type="text/html">
         <div class="message2-legend">
-            <p>
-                <span class="message__name">{{username}} -</span>
-                <span class="message__meta">{{createdAt}}</span>
-            </p>
-            <div class="text2">{{word}}</div>
+            <div class="text2">
+                {{word}}
+                <p>
+                    <span class="message__meta">{{createdAt}}</span>
+                </p>
+            </div>
         </div>
     </script>
 
     <script id="location-template" type="text/html">
         <div class="message-legend">
-            <p>
-                <span class="message__name">{{username}} -<span>
-                <span class="message__meta">{{createdAt}}<span>
-            </p>
-            <p class="text"><a href="{{pos}}" target="_blank">My current location</a></p>
+            <div class="text">
+                <p><span class="message__name">{{username}}</span><p>
+                <a href="{{pos}}" target="_blank">My current location</a>
+                <p><span class="message__meta">{{createdAt}}</span></p>
+            </div>
         </div>
     </script>
 
     <script id="location2-template" type="text/html">
         <div class="message2-legend">
-            <p>
-                <span class="message__name">{{username}} -<span>
-                <span class="message__meta">{{createdAt}}<span>
-            </p>
-            <p class="text2"><a href="{{pos}}" target="_blank">My current location</a></p>
+            <div class="text2">
+                <a href="{{pos}}" target="_blank">My current location</a>
+                <p><span class="message__meta">{{createdAt}}</span></p>
+            </div>
         </div>
     </script>
 

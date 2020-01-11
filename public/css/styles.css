@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 input {
@@ -125,10 +125,6 @@ button:disabled {
 
 /* Message Styles */
 
-.message {
-    margin-bottom: 16px;   
-}
-
 .message-legend {
     text-align: left;
     margin-bottom: 16px
@@ -141,12 +137,14 @@ button:disabled {
 
 .message__name {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
+    color: black;
 }
 
 .message__meta {
-    color: #777;
-    font-size: 12px;
+    color: white;
+    font-size: 70%;
+    float: right;
 }
 
 .message a {
@@ -215,7 +213,7 @@ button:disabled {
 .text {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     border: 2px solid #0091ff;
     border-radius: 0px 10px 10px 10px;
     display: inline-block;
@@ -229,7 +227,7 @@ button:disabled {
 .text2 {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     border: 2px solid #0091ff;
     border-radius: 10px 0px 10px 10px;
     padding: 5px;
