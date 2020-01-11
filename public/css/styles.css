@@ -134,18 +134,14 @@ button:disabled {
     margin-bottom: 16px
 }
 
-.message2 {
-    text-align: right;
-}
-
 .message2-legend {
     text-align: right;
+    margin-bottom: 16px;
 }
 
 .message__name {
     font-weight: 600;
     font-size: 12px;
-    margin-right: 8px;
 }
 
 .message__meta {
@@ -154,7 +150,7 @@ button:disabled {
 }
 
 .message a {
-    color: #0070CC;
+    color: white;
 }
 
 /* Message Composition Styles */
