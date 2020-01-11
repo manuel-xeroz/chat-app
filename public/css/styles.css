@@ -17,13 +17,14 @@ input {
 body {
     line-height: 1.4;
     color: #333333;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
     margin-bottom: 16px;
-    font-family: 'Open sans';
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 label {
@@ -51,7 +52,7 @@ button {
     color: white;
     font-size: 16px;
     border-radius: 7px;
-    font-family: cursive;
+    font-family: 'Quicksand', sans-serif;
     transition: background .3s ease;
 }
 
@@ -192,7 +193,7 @@ button:disabled {
     background: #0091ff;
     padding: 24px;   
     text-transform: uppercase;
-    font-family: cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .list-title {
@@ -209,13 +210,14 @@ button:disabled {
     list-style-type: none;
     font-weight: 300;
     padding: 12px 24px 0 24px;
+    margin-left: 10px;
     font-family: monospace;
     font-size: 14px;
     list-style: circle;
 }
 
 .text {
-    font-family: cursive;
+    font-family: 'Quicksand', sans-serif;
     margin-bottom: 10px;
     font-size: 12px;
     border: 2px solid #0091ff;
@@ -229,7 +231,7 @@ button:disabled {
 }
 
 .text2 {
-    font-family: cursive;
+    font-family: 'Quicksand', sans-serif;
     margin-bottom: 10px;
     font-size: 12px;
     border: 2px solid #0091ff;
@@ -246,13 +248,14 @@ button:disabled {
 
 .username {
     font-size: 14px;
-    font-family: cursive;
+    font-family: 'Quicksand', sans-serif;
     color: #0091ff;
     border: 2px solid #0091ff;
     width: 250px;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+    display: inline-block;
 }
 
 #heading-user {
